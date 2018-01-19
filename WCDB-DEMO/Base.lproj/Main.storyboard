@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3U-eP-f7v">
+                                <rect key="frame" x="59" y="171" width="100" height="60"/>
+                                <color key="backgroundColor" red="0.41328447638827459" green="0.99770747855336939" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="atC-Pc-iPq"/>
+                                    <constraint firstAttribute="width" constant="100" id="sER-dU-fQ8"/>
+                                </constraints>
+                                <state key="normal" title="增"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfE-tk-gpp">
+                                <rect key="frame" x="199" y="284" width="100" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.65522872263737009" blue="0.19270850868637179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="查"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="je4-mO-Lld">
+                                <rect key="frame" x="59" y="284" width="100" height="60"/>
+                                <color key="backgroundColor" red="0.68162865124301764" green="1" blue="0.55375847674328638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="改"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sYm-im-9Yc">
+                                <rect key="frame" x="199" y="171" width="100" height="60"/>
+                                <color key="backgroundColor" red="0.083940044538462114" green="0.20263913834365008" blue="0.20310476036269431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="删">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xK2-R5-bxt">
+                                <rect key="frame" x="87" y="435" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="977-ky-oLI"/>
+                                    <constraint firstAttribute="width" constant="200" id="YzP-Ha-Z55"/>
+                                </constraints>
+                                <state key="normal" title="创建">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C3U-eP-f7v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="9OU-BH-L1Q"/>
+                            <constraint firstItem="xK2-R5-bxt" firstAttribute="top" secondItem="WfE-tk-gpp" secondAttribute="bottom" constant="91" id="K7E-Xu-tm1"/>
+                            <constraint firstItem="xK2-R5-bxt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WVM-b4-cVC"/>
+                            <constraint firstItem="WfE-tk-gpp" firstAttribute="width" secondItem="C3U-eP-f7v" secondAttribute="width" id="cph-Y7-CAH"/>
+                            <constraint firstItem="xK2-R5-bxt" firstAttribute="top" secondItem="je4-mO-Lld" secondAttribute="bottom" constant="91" id="ftG-E7-jfn"/>
+                            <constraint firstItem="sYm-im-9Yc" firstAttribute="width" secondItem="C3U-eP-f7v" secondAttribute="width" id="iUX-mK-CTR"/>
+                            <constraint firstItem="je4-mO-Lld" firstAttribute="width" secondItem="C3U-eP-f7v" secondAttribute="width" id="jWN-Hf-BGi"/>
+                            <constraint firstItem="WfE-tk-gpp" firstAttribute="height" secondItem="C3U-eP-f7v" secondAttribute="height" id="ju6-3M-elO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xK2-R5-bxt" secondAttribute="bottom" constant="188" id="kcm-3g-1on"/>
+                            <constraint firstItem="sYm-im-9Yc" firstAttribute="height" secondItem="C3U-eP-f7v" secondAttribute="height" id="odI-LF-vWp"/>
+                            <constraint firstItem="je4-mO-Lld" firstAttribute="height" secondItem="C3U-eP-f7v" secondAttribute="height" id="pWd-6X-jkE"/>
+                            <constraint firstItem="sYm-im-9Yc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="qzh-eT-q9x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sYm-im-9Yc" secondAttribute="trailing" constant="76" id="rzc-ne-BZo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WfE-tk-gpp" secondAttribute="trailing" constant="76" id="sk0-mD-sE5"/>
+                            <constraint firstItem="je4-mO-Lld" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="tcv-8e-qJc"/>
+                            <constraint firstItem="C3U-eP-f7v" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="151" id="zqU-Xj-H2b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addBtn" destination="C3U-eP-f7v" id="wek-JT-9TL"/>
+                        <outlet property="creatBtn" destination="xK2-R5-bxt" id="sw0-F3-lm6"/>
+                        <outlet property="deleteBtn" destination="sYm-im-9Yc" id="qPB-Jw-DtO"/>
+                        <outlet property="selectBtn" destination="WfE-tk-gpp" id="TTQ-oG-bbX"/>
+                        <outlet property="updateBtn" destination="je4-mO-Lld" id="IJM-dw-FxI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="124.58770614692655"/>
+        </scene>
+    </scenes>
+</document>
